@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popoins", sans-serif;
+}
+
+.container-all {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+
+  background: linear-gradient(135deg, #153677, #4e085f);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+
+  /* background-color: #f5f5f5; */
+
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__head {
+  margin-top: -5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__head h1 {
+  color: #f5f5f5;
+
+  font-size: 2rem;
+}
+
+.app__head h1 i {
+  font-size: 1.5rem;
+
+  color: #ff2963;
+}
+
+.app__textplace {
+  width: 100%;
+  height: 300px;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  border: 1px solid #2d56a833;
+  font-size: 1rem;
+  color: #f5f5f58a;
+
+  background-color: #403d847a;
+
+  resize: none;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.app__textplace::placeholder {
+  color: #f5f5f53f;
+}
+
+.app__textplace:focus {
+  background-color: #403d84;
+}
+
+.app__row {
+  width: 100%;
+  padding: 1rem 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.app__row button {
+  margin-left: 0.5rem;
+  border-radius: 10rem;
+  padding: 0.5rem 1.5rem;
+
+  border: none;
+  outline: none;
+
+  background-color: #ff296279;
+
+  color: whitesmoke;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.app__row button:hover {
+  background-color: #ff2962;
+}
+
+.app__row button img {
+  width: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+.app__row select {
+  height: 40px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 10rem;
+
+  color: whitesmoke;
+
+  background-color: #403d84a7;
+
+  outline: none;
+  appearance: none;
+
+  background-image: url(images/dropdown.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 17px;
+
+  flex: 1;
+}
+
+.app__row select:focus{
+  background-color: #403d84;
+}
